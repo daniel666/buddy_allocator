@@ -14,9 +14,10 @@ This is the real buddy allocator. In contrast to the naive memalloc, the
 following things are achieved. 
 
 + blocks of same size are chained by pointer and stored in a slot indexed by
-level value. level 0 maintains the largest sized block, while the MAX_LEVEL
+level value. Level 0 maintains the largest sized block, while the
+<em>MAX_LEVEL</em>
 macro defines the maximal available level which features block of size
-BASE_SIZE. Growing from level 0, block size at each level reduces by half.
+<em>BASE_SIZE</em>. Growing from level 0, block size at each level reduces by half.
 
 + the next pointer is stored in the free block (NOT as a preamble), which occupies sizof(void *)
 bytes. If on a 64 bit system, the pointer is 8 bytes, and the first 8 bytes of
