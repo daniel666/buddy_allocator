@@ -7,7 +7,7 @@
 //next pointer is stored in free block itself
 #define BASE_SIZE 8
 
-//max level of the split, note the total level is this value plust 1
+//max level of the split, note the total level is this value plus 1
 #define MAX_LEVEL 3
 
 typedef enum _state{
