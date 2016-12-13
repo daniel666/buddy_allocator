@@ -6,8 +6,8 @@ This is the file that implements malloc function by brutal force. Each
 allocated block freatures a preamble meta information area that describes the size
 of the block and a pointer that points to the next block. The allocation scheme
 is simply to iterate the free list to find the first block with a size no less
-than that required. Freeing a block is simply to add it its two neighboring
-free block by address.
+than that required. Freeing a block is simply to add it to the free list between its two neighboring
+free blocks by address.
 
 ## mem_buddy_alloc.c/h
 This is the real buddy allocator. In contrast to the naive memalloc, the
