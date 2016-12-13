@@ -37,3 +37,6 @@ recurse to call buddy_free functioin. Marking its parent block as USED creates
 the effect of simulating outer program calling the free fuction, keeping the
 function ops consistent across different freeing request at distinct 
 levels.
+
+A very good tutorial on buddy allocator can be seen here
+[http://bitsquid.blogspot.ca/2015/08/allocation-adventures-3-buddy-allocator.html]
